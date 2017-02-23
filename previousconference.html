@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="css/typo.css" type="text/css" media="all">
 	<!-- Font Awesome css -->
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+
+	<script src="https://www.w3schools.com/lib/w3data.js"></script>
 	<!-- Ihover css -->
 	<link href="css/ihover.css" rel="stylesheet">
     <!-- Widget css -->
@@ -39,60 +41,11 @@
         <a id="responsive-menu-button" href="#sidr-main"><i class="fa fa-bars"></i></a>
     </div>
 	<!-- Header start -->
-	<header id="kode-header">
-		<strong class="kode-logo">
-			<a href="#"><img src="images/logo.png" alt=""></a>
-		</strong>
-		<nav class="kode-nav" id="navigation">
-			<ul>
-				<li><a href="index.html">home</a></li>
-				<li><a href="about-us.html">About us</a></li>
-				<li><a href="#">Pages</a>
-					<ul>
-						<li><a href="404.html">Error 404</a></li>
-						<li><a href="comming-soon.html">Comming Soon</a></li>
-						<li><a href="faq.html">Faq</a></li>
-					</ul>
-				</li>
-				<li class="active"><a href="#">Gallery</a>
-					<ul>
-						<li><a href="gallery-01.html">Gallery Style 1</a></li>
-						<li><a href="gallery-02.html">Gallery Style 2</a></li>
-					</ul>
-				</li>
-				<li><a href="#">speakers</a>
-					<ul>
-						<li><a href="our-speaker.html">Our Speakers</a></li>
-						<li><a href="speaker-detail.html">Speaker Detail</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Blog</a>
-					<ul>
-						<li><a href="blog-2-col.html">Blog 2 Col</a></li>
-						<li><a href="blog-3-col.html">Blog 3 Col</a></li>
-						<li><a href="blog-detail.html">Blog Detail</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Events</a>
-					<ul>
-						<li><a href="event-list.html">Events List</a></li>
-						<li><a href="event-3-col.html">Events Grid</a></li>
-						<li><a href="event-detail.html">Event Detail</a></li>
-					</ul>
-				</li>
-				<li><a href="contact-us.html">contact us</a></li>
-			</ul>
-		</nav>
-		<div class="col-right">
-			<ul class="header-social">
-				<li><a href="#" data-toggle="tooltip" title="Facebook" data-placement="bottom"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" data-toggle="tooltip" title="Twitter" data-placement="bottom"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" data-toggle="tooltip" title="Linkedin" data-placement="bottom"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#" data-toggle="tooltip" title="Google Plus" data-placement="bottom"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
-			<a href="#" class="button-member">Become A member</a>
-		</div>
-	</header>
+	<div w3-include-html="header.html"></div> 
+
+<script>
+w3IncludeHTML();
+</script>
 	<!-- header ends -->
     
     <!-- Kode-Header End -->
@@ -107,17 +60,7 @@
             <!--ROW START-->
             <div class="row">
                 <div class="col-md-6 col-sm-6">
-                    <h2>blog</h2>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fa fa-home"></i>Home</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-angle-right"></i>Event Gallery</a>
-                        </li>
-                    </ul>
+                    <h2>Photos from 2007 Conference</h2>
                 </div>
             </div>
             <!--ROW END-->
@@ -131,10 +74,10 @@
 				<div class="kode_portfolio_tab">
 					<ul class="filter-item" id="filterable-item-filter-1">
 						<li><a data-value="all" href="#" class="active">All</a></li>
-						<li><a data-value="1" href="#">conferences</a></li>
-						<li><a data-value="2" href="#">coming events</a></li>
-						<li><a data-value="3" href="#">website</a></li>
-						<li><a data-value="4" href="#">video</a></li>
+						<li><a data-value="1" href="#">Workshops</a></li>
+						<li><a data-value="2" href="#">Gala Dinner</a></li>
+						<li><a data-value="3" href="#">Panel Discussion</a></li>
+						<li><a data-value="4" href="#">Cultural Programme</a></li>
 					</ul>
 				</div>
 				<!--Portfolio Tab Wrap End-->
@@ -145,12 +88,7 @@
 								<img src="extra-images/gallery-01.jpg" alt="POrtfolio Image Here">
 								<figcaption class="kode_fortfolio_detail">
 									<div class="caption-holder">
-										<a href="extra-images/bg-event-testimonial.jpg" data-rel="prettyphoto[]" class="search-portfolio">
-											<i class="fa fa-search"></i>
-										</a>
-										<a href="#" class="link-portfolio">
-											<i class="fa fa-link"></i>
-										</a>
+										
 										<strong>Group of working poeple together for business conference</strong>
 									</div>
 								</figcaption>
@@ -165,12 +103,7 @@
 								<img src="extra-images/gallery-02.jpg" alt="POrtfolio Image Here">
 								<figcaption class="kode_fortfolio_detail">
 									<div class="caption-holder">
-										<a href="extra-images/bg-event-testimonial.jpg" data-rel="prettyphoto[]" class="search-portfolio">
-											<i class="fa fa-search"></i>
-										</a>
-										<a href="#" class="link-portfolio">
-											<i class="fa fa-link"></i>
-										</a>
+										
 										<strong>Group of working poeple together for business conference</strong>
 									</div>
 								</figcaption>
@@ -185,12 +118,7 @@
 								<img src="extra-images/gallery-03.jpg" alt="POrtfolio Image Here">
 								<figcaption class="kode_fortfolio_detail">
 									<div class="caption-holder">
-										<a href="extra-images/bg-event-testimonial.jpg" data-rel="prettyphoto[]" class="search-portfolio">
-											<i class="fa fa-search"></i>
-										</a>
-										<a href="#" class="link-portfolio">
-											<i class="fa fa-link"></i>
-										</a>
+										
 										<strong>Group of working poeple together for business conference</strong>
 									</div>
 								</figcaption>
@@ -205,12 +133,7 @@
 								<img src="extra-images/gallery-04.jpg" alt="POrtfolio Image Here">
 								<figcaption class="kode_fortfolio_detail">
 									<div class="caption-holder">
-										<a href="extra-images/bg-event-testimonial.jpg" data-rel="prettyphoto[]" class="search-portfolio">
-											<i class="fa fa-search"></i>
-										</a>
-										<a href="#" class="link-portfolio">
-											<i class="fa fa-link"></i>
-										</a>
+										
 										<strong>Group of working poeple together for business conference</strong>
 									</div>
 								</figcaption>
@@ -225,12 +148,7 @@
 								<img src="extra-images/gallery-05.jpg" alt="POrtfolio Image Here">
 								<figcaption class="kode_fortfolio_detail">
 									<div class="caption-holder">
-										<a href="extra-images/bg-event-testimonial.jpg" data-rel="prettyphoto[]" class="search-portfolio">
-											<i class="fa fa-search"></i>
-										</a>
-										<a href="#" class="link-portfolio">
-											<i class="fa fa-link"></i>
-										</a>
+										
 										<strong>Group of working poeple together for business conference</strong>
 									</div>
 								</figcaption>
@@ -245,12 +163,7 @@
 								<img src="extra-images/gallery-06.jpg" alt="POrtfolio Image Here">
 								<figcaption class="kode_fortfolio_detail">
 									<div class="caption-holder">
-										<a href="extra-images/bg-event-testimonial.jpg" data-rel="prettyphoto[]" class="search-portfolio">
-											<i class="fa fa-search"></i>
-										</a>
-										<a href="#" class="link-portfolio">
-											<i class="fa fa-link"></i>
-										</a>
+										
 										<strong>Group of working poeple together for business conference</strong>
 									</div>
 								</figcaption>
@@ -265,12 +178,7 @@
 								<img src="extra-images/gallery-07.jpg" alt="POrtfolio Image Here">
 								<figcaption class="kode_fortfolio_detail">
 									<div class="caption-holder">
-										<a href="extra-images/bg-event-testimonial.jpg" data-rel="prettyphoto[]" class="search-portfolio">
-											<i class="fa fa-search"></i>
-										</a>
-										<a href="#" class="link-portfolio">
-											<i class="fa fa-link"></i>
-										</a>
+										
 										<strong>Group of working poeple together for business conference</strong>
 									</div>
 								</figcaption>
@@ -285,12 +193,7 @@
 								<img src="extra-images/gallery-08.jpg" alt="POrtfolio Image Here">
 								<figcaption class="kode_fortfolio_detail">
 									<div class="caption-holder">
-										<a href="extra-images/bg-event-testimonial.jpg" data-rel="prettyphoto[]" class="search-portfolio">
-											<i class="fa fa-search"></i>
-										</a>
-										<a href="#" class="link-portfolio">
-											<i class="fa fa-link"></i>
-										</a>
+										
 										<strong>Group of working poeple together for business conference</strong>
 									</div>
 								</figcaption>
@@ -305,12 +208,7 @@
 								<img src="extra-images/gallery-01.jpg" alt="POrtfolio Image Here">
 								<figcaption class="kode_fortfolio_detail">
 									<div class="caption-holder">
-										<a href="extra-images/bg-event-testimonial.jpg" data-rel="prettyphoto[]" class="search-portfolio">
-											<i class="fa fa-search"></i>
-										</a>
-										<a href="#" class="link-portfolio">
-											<i class="fa fa-link"></i>
-										</a>
+										
 										<strong>Group of working poeple together for business conference</strong>
 									</div>
 								</figcaption>
@@ -320,8 +218,6 @@
 					<!-- kode-Portfolio end End -->
                     
 				</div>
-				<!-- kode-Portfolio filterable_container End -->
-				<a class="button-animate" href="#"><span data-hover="Load More">Load More</span></a>
 			</div>
 		</div>
 		<!-- kode-galler01 End -->
@@ -330,52 +226,8 @@
     
     
     <!--Footer Wrap Start-->
-	<footer id="footer">
-		<div class="event-map">
-			<div id="googleMap" style="width:100%;height:414px;"></div>
-		</div>
-		<div class="kode-footer-text">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-9 col-xs-12 footer-cols">
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<strong class="title">Contact info</strong>
-							<h3>Contact Us</h3>
-							<p>Lorem ipsum dolor sit amet adipi elit sed do eiusmod.</p>
-							<ul class="address-nav">
-								<li><i class="fa fa-map-marker"></i> abc raod, 41 street, New York</li>
-								<li><i class="fa fa-envelope-o"></i><a href="#">Info@info.com</a></li>
-								<li><i class="fa fa-phone"></i> +(35) 123 456</li>
-							</ul>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<h2 class="title">Twitter</h2>
-							<h3>twitter Feed</h3>
-							<ul class="twitterfeed-nav">
-								<li><i class="fa fa-twitter"></i> <a href="#">@orem ipsum</a> dolor sit amet adipi elit sed do eiusmod.</li>
-								<li><i class="fa fa-twitter"></i> <a href="#">@orem ipsum</a> dolor sit amet adipi elit sed do eiusmod.</li>
-								<li><i class="fa fa-twitter"></i> <a href="#">@orem ipsum</a> dolor sit amet adipi elit sed do eiusmod.</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--kode-footer-text End-->
-		<div class="footer-copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<p>&copy; <a href="#">Kode Forest</a> All Rights Reserved</p>
-					</div>
-				</div>
-			</div>
-			<div class="back-to-top">
-				<a href="#"><i class="fa fa-arrow-up"></i></a>
-			</div>
-		</div>
-		<!--copyright End-->
-	</footer>
+	
+	<div w3-include-html="footer.html"></div> 
     <!--Footer Wrap End-->
     
     
